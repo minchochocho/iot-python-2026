@@ -1,4 +1,4 @@
-# ex03_logic_control 분기문/반복문
+# ex03_logic_control.py 분기문/반복문
 
 # 분기문
 age = int(input('나이는?'))
