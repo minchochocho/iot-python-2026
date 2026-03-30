@@ -1,0 +1,25 @@
+{
+    "highlight.regexes": {
+        "(### .*)": [
+            { 
+                "filterFileRegex": ".*\\.py$",
+                "color": "#E74C3C", 
+                "fontWeight": "bold",
+                "outline": "1px solid #E74C3C33" 
+            }
+        ],
+        "(## [^#].*)": [
+            { 
+                "filterFileRegex": ".*\\.py$",
+                "color": "#2ECC71", 
+                "fontWeight": "bold" 
+            }
+        ],
+        "(# [^#].*)": [
+            { 
+                "filterFileRegex": ".*\\.py$",
+                "color": "#F1C40F"
+            }
+        ]
+    }
+}
