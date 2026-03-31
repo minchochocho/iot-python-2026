@@ -175,7 +175,7 @@ IoT 개발자 파이썬 리포지토리
 
 ### 파이썬 기본 학십
 
-11. 라이브러리 사용 계속
+11. 라이브러리 사용 계속 - [소스](./day03/ex11_out_pakage.py)
     - 타언어의 경우 웹 검색, 다운로드, 개발위치 설치나 복사
     > 매우 불편
     - CPU 아키텍처에 따라 32bit(x86), 64bit(x64) 마다 설치 방법 상이
@@ -201,12 +201,13 @@ IoT 개발자 파이썬 리포지토리
     > pip uninstall 패키지명
 
     ```
+    - CSV 라이브러리 - [소스](./day03/ex12_csv_pakage.py)
 
-12. 기타자료구조
+12. 기타자료구조 - [소스](./day03/ex13_datastruct.py)
     - 리스트 외 튜플, 딕셔너리, 셋 등 ...
     - 각 자료구조 형태를 구분
 
-13. main
+13. main - [소스](./day03/ex14_main.py)
     - 파이썬은 main함수가 필요없음
     - 여러 파일 중 시작점(Entry point)을 지칭할 때 사용
     - `__main__` 특수변수를 사용
@@ -234,7 +235,7 @@ IoT 개발자 파이썬 리포지토리
 
     - 가상환경은 github에 올리지 말 것. `.gitignore`에 가상환경 폴더명 추가
 
-15. 객체지향 
+15. 객체지향 - [소스](./day03/ex15_oop.py) ~ [소스](./day03/ex18_encapsule.py)
     - C++의 객체지향, 클래스와 동일
     - 접근제한자가 없음(public, privated, protected)
         - 개발자가 알아서 해라
@@ -244,7 +245,7 @@ IoT 개발자 파이썬 리포지토리
     - 파이썬의 철학 : `막지 말고, 알아서 지켜라`
     - public, private(`__`로 변수선언), protected(`_` 변수 선언) C++처럼 접근 제한자를 많이 사용하지 않음
 
-16. 예외처리 
+16. 예외처리 - [소스](./day03/ex19_exception.py)
     - 비정상 종료를 막는 기능
     - try ~ except ~ finally 로 구분지어 사용(else는 잘 사용안함)
     - except를 여러번 쓸 수 있으나, except Exception as e 하나로 통일해도 무방
@@ -274,7 +275,7 @@ IoT 개발자 파이썬 리포지토리
     - Project Jupyter
     - 확장에서 Jupyter 설치
 
-- 사용법
+- 사용법 - [노트북](./day03/ex20_jupyter_start.ipynb)
     - 명령 팔레트(Ctrl + Shift + P)
 
     ![alt text](image-11.png)
@@ -297,4 +298,27 @@ IoT 개발자 파이썬 리포지토리
     
 - 사용처
     - 웹상에서 동작하므로 많은 서비스를 지원
-    - Github Codespace - 기존 리포지토리와의 연결 지원(무료일 경우 한달 140시간)
+    - [Github Codespace](https://github.com/features/codespaces?locale=ko-kr) - 기존 리포지토리와의 연결 지원(무료일 경우 한달 140시간)
+    - [Google Colab](https://colab.research.google.com/) - 구글에서 지원하는 노트북서비스, 구글 드라이브와 연결, 90분 연결무료, 기능 제약적
+
+### 데이터 분석 기초 - [소스](./day03/ex21_dataprocess.ipynb)
+
+- ~~리스트, 튜플, 딕셔너리~~
+- 리스트 컴프리헨션
+- 파일 입출력
+- Numpy
+
+## 4일차
+
+### 데이터 분석 기추
+
+- 분석용 기초 이론 계속 - [노트북]()
+    - NumPy
+    - Pandas
+    - Matplotlib
+    - Seaborn
+    - Folium
+    - wordCloud
+    - 기초 통계
+    - 데이터 전처리
+
