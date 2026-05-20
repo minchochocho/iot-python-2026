@@ -426,6 +426,7 @@ IoT 개발자 파이썬 리포지토리
 
 ## 7일차
 
+
 ### 가상환경 실행
 - 생성한 가상환경 내에 Scripts 폴더 안, Activate.ps1 실행해야 가상환경 준비
 
@@ -462,7 +463,7 @@ IoT 개발자 파이썬 리포지토리
 - Keras : 교육용 인기
 - etc : 몰라도 됨
 
- #### 파이토치
+ ### 파이토치
 
  - 코드가 직관적이고, 디버깅이쉽고, 연구/개발쪽 모두 선호하는 프레임웤
 
@@ -477,6 +478,10 @@ IoT 개발자 파이썬 리포지토리
         - 내부에 CUDA 런타임 라이브러리를 가지고 있음
         - pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
         - cu126-cp312-cp312-win_adlm64.whl 대력 2.6GB 정도
+
+
+ ####  파이토치 기본문법
+ - [소스](./day07/ex29_pytorch_basic.ipynb)
 
 #### 선형회귀(Linear Regression)
 - 데이터의 경향이 직선으로 나타나는 모델
@@ -517,6 +522,7 @@ IoT 개발자 파이썬 리포지토리
 
 #### 다중퍼셉트론
 
+- [소스](./day07/ex31_pytorch_nn.ipynb)
 - 단일 퍼셉트론의 한계를 극복하기 위해 등장. 퍼셉트론을 여러개 쌓아올린 구조
 - 입력층, 은닉층, 출력층으로 구분
 
@@ -527,3 +533,46 @@ IoT 개발자 파이썬 리포지토리
 - Sigmoid, Tanh, `ReLU`, Softnas
 
 ![alt text](image-24.png)
+
+## 9일차
+
+### 딥러닝 실습
+
+#### Fashion-MNIST 분류모델
+
+- MNIST 데이터셋 중 독일 온라인 패션 플랫폼 잘란도에서 공개한 데이터넷
+- 6만개의 학습 이미지 1만개 테스트 이미지
+- 총 10가지 종류 : 티셔츠, 바지, 풀오버, 드레스, 코트, 샌들, 셔츠, 스니커즈, 가방, 발목부츠
+- 28x28 픽셀 흑백이미지 제공
+
+#### CUDA 사용 팁
+
+- 현재 NVIDIA RTX 5060 그래픽카드
+    - GPU 아키텍처 - Blakwell계열
+    - CUDA Compute Capa - sm_120 사용
+    - cuda 12.8 이상 사용
+- 이전 버전은 cuda 12.6 사용가능
+
+- 12.6 버전 Pytorch 삭제 후, 13.0 이상 설치
+    - 13.2 버전은 전체 Pytorch기능 사용못함
+
+- 설치 방법
+```powershell
+> .\iot-venv\Scripts\Activate.ps1 # 가상환경 진입
+
+> pip uninstall torch torchvision torchaudio -y
+
+> pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130 
+```
+
+#### CNN
+
+- [소스](./day09/ex33_pytorch_cnn.ipynb)
+- Convolutional Neural Network(합성곱 신경망) : 이미지나 영상 분석에 특화된 인공지능 신경망 구조
+- 로지스틱 회귀 : 이미지를 1차원으로 변경 처리
+
+![alt text](image-26.png)
+13x26 부분 오타 => 13x13
+
+- 최적화 알고리즘의 softmax() 클래스는 deprecated(추후 버전에 삭제예정)임
+    - 최대한 사용을 안하는 것을 추천
