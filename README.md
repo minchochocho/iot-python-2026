@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/dbcca2b1-54d2-4bcf-9974-ca37bb6bcca6
 # iot-python-2026
 IoT 개발자 파이썬 리포지토리
 
@@ -613,3 +615,14 @@ IoT 개발자 파이썬 리포지토리
         - 화재감지
 
 - 이미지, 영상 인식
+
+- YOLO 설치
+
+    ```powershell
+    > pip install ultralytics huggingface_hub
+    ```
+
+  
+
+https://github.com/user-attachments/assets/4f5b6bd8-eb4b-4384-8ecf-0a0d3e8d10a4
+
