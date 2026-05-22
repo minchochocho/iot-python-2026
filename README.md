@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/dbcca2b1-54d2-4bcf-9974-ca37bb6bcca6
 # iot-python-2026
 IoT 개발자 파이썬 리포지토리
 
