@@ -210,4 +210,12 @@ day10/cust_models/
 
 day10/dataset/train/
 day10/resnet18_bird_cat_dog.pth
+# 모델파일은 제외
 *.pth
+day11/data
+.pt
+# 100메가가 넘는 파일은 반드시 제외
+day11/firedetect-11s.pt
+day11/sample/sample01.mp4
+day11/sample/sample02.mp4
+day11/sample/sample03.mp4
